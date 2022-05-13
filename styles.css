@@ -54,8 +54,7 @@ body{
 
 .card-container{
     height: auto;
-    min-width: 600px;
-    margin: 10px 100px 20px 100px;
+    margin: 10px 50px 20px 50px;
     display: grid;
     grid-template: auto / repeat(2,1fr) ;
     padding-left: center;
@@ -71,7 +70,6 @@ body{
 
 .card-text p{
     padding-bottom: 30px;
-    padding-right: 200px;
     font-size: 25px;
     font-weight: 200;
     font-family: Imbue;
@@ -88,3 +86,107 @@ body{
     font-size: 20px;
 }
 
+.main-contenedor{
+    height: auto;
+}
+
+.valoraciones-main{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+
+.valoraciones-main p{
+    font-size: 40px;
+    font-family: Imbue;
+    font-weight: 200;
+}
+
+.contaner-ventas-main{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    gap: 25px
+}
+
+.productos-ventas{
+    padding: 20px;
+    background: #F3FFE4;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    border-radius: 25px
+ }
+ 
+
+.productos-ventas p{
+    font-size: 25px;
+}
+
+.prod1{
+    width: 50%;
+    height: 100%;
+    grid-area: 1/1 / 3/1;
+    border-radius: 15px;
+    place-self: center;
+}
+
+.prod1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prod1 img{
+    width: 150px;
+    height: 300px;
+}
+
+.prod2{
+    width: 85%;
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    place-items: center;
+}
+
+
+
+.prod2 img{
+    width: 150px;
+    height: 150px;
+    grid-area: 1/1 / 3/1;
+    margin: 0 auto;
+}
+
+.productos-ventas button{
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--color-buttom);
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    font-size: 20px;
+}
+
+.buttom-ventas{
+    text-align: end;
+    margin-right: 120px;
+}
+
+.buttom-ventas button{
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--color-buttom);
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    font-size: 20px;
+}
+
+ .footer-contaner .lista-header{
+     grid-template: auto / repeat(3,auto);
+ }
