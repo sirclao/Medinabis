@@ -266,6 +266,22 @@ body{
     height: 400px;
 }
 
+/* Pagina de que somos */
+.quienSomos-contenedor-main{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+    place-self: center;
+}
+
+.hacemos-card{
+    place-self: center;
+}
+
+/*Fooder*/
  .footer-contaner .lista-header{
      grid-template: auto / repeat(2,auto);
  }
