@@ -29,7 +29,7 @@ body{
 .contendor-lista .lista-header{
     height: 100%;
     display: grid;
-    grid-template: auto /repeat(6,auto);
+    grid-template: auto /repeat(5,auto);
     place-items: center;
 }
 
@@ -197,6 +197,75 @@ body{
     place-items: center;
 }
 
+/* PAGINAS DE Finalizar Pedidos*/
+.compras-contener-main{
+    margin: 20px 50px 20px 50px;
+    padding: 50px;
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(2,1fr);
+    gap: 20px;
+    padding: 20px;
+    background: #F3FFE4;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    border-radius: 25px
+}
+
+.compras-text-card{
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.compras-text-card button{
+    grid-area: 4/2 / 4/3;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--color-buttom);
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    font-size: 15px;
+}
+
+.pagos-seccion{
+    margin: 50px;
+}
+
+/*Pagina Despachos */
+.main-districiones{
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(2,1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+    place-self: center;
+}
+
+.distribicion-card{
+    place-self: center;
+}
+
+.distribicion-card p{
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: Imbue;
+}
+
+.distribicion-card h3{
+    font-family: Imbue;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.distibucion-img img{
+    width: 450px;
+    height: 400px;
+}
+
  .footer-contaner .lista-header{
-     grid-template: auto / repeat(3,auto);
+     grid-template: auto / repeat(2,auto);
  }
