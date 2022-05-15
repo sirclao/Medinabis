@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fondo: #E9F5DB;
+    --color-buttom: #718355;
+}
+
+.body{
+    background-color: var(--color-fondo);
+}
+
+.body a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.header-container-principal{
+    height: auto;
+    align-items: center;
+}
+
+.navegador-header{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    align-self: center;
+}
+
+.contendor-lista .lista-header{
+    height: 100%;
+    display: grid;
+    grid-template-columns:  repeat(5,auto);
+    place-items: center;
+}
+
+.contendor-lista ul, a{
+    list-style: none;
+    text-decoration: none;
+    font-family: Imbue;
+    font-weight: 300;
+    font-size: 25px;
+    color: black;
+}
+
+.lista-header .button button{
+    width: 130px;
+    height: 40px;
+    background-color: var(--color-buttom);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.card-container{
+    height: auto;
+    margin: 10px 50px 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.card-text h1{
+    padding-bottom: 20px;
+    font-size: 80px;
+    font-family: Imbue;
+    font-weight: 600;
+}
+
+.card-text p{
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: Imbue;
+}
+
+.card-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-container button{
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--color-buttom);
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    font-size: 20px;
+}
+
+.main-contenedor{
+    height: auto;
+}
+
+.valoraciones-main{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+
+.valoraciones-main img{
+    width: 90%;
+    object-fit: cover;
+}
+
+.valoraciones-main p{
+    font-size: 40px;
+    font-family: Imbue;
+    font-weight: 200;
+}
+
+.contaner-ventas-main{
+    margin: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 25px
+}
+
+.productos-ventas{
+    padding: 20px;
+    background: #F3FFE4;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    border-radius: 25px
+ }
+ 
+
+.productos-ventas p{
+    font-size: 25px;
+}
+
+.productos-ventas button{
+    width: 200px;
+    height: 40px;
+    background-color: var(--color-buttom);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.prod1{
+    grid-area: 1/1 / 3/1;
+    border-radius: 15px;
+    place-self: center;
+}
+
+.prod1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prod1 img{
+    width: 200px;
+    height: 350px;
+}
+
+.prod1 p{
+    padding: 25px;
+}
+
+.prod2{
+    margin: 0 auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,2fr)); 
+    place-items: center;
+}
+
+.prod2 img{
+    width: 200px;
+    height: 150px;
+    grid-area: 1/1 / 3/1;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.buttom-ventas{
+    text-align: end;
+    margin-right: 120px;
+}
+
+.buttom-ventas button{
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--color-buttom);
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    font-size: 20px;
+}
+
+/*Stylos Formularios*/
+fomulario-InicioSeccion h2{
+
+    text-align: left;
+    font-size: 40px;
+    color: #78788c;
+    margin: auto 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 3.5px solid #787c;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+.fomulario-InicioSeccion .formulario{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; 
+    font-family: 'Montserrat', sans-serif;
+    padding: 55px 80px;
+    margin: 0 auto;
+}
+
+.fomulario-InicioSeccion input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px solid #181831;
+    background: none;
+    padding: 10px;
+    color: rgb(55, 54, 54);
+}
+
+.fomulario-InicioSeccion p::before{
+    content: attr(type);
+    font-size: 20px;
+    color: black;
+}
+
+/*Pagina de Tienda Oline*/
+.main-container-tienda{
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    gap: 15px;
+    place-items: center;
+}
+
+/* PAGINAS DE Finalizar Pedidos*/
+.compras-contener-main{
+    margin: 20px 50px 20px 50px;
+    padding: 50px;
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(2,1fr);
+    gap: 20px;
+    padding: 20px;
+    background: #F3FFE4;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    border-radius: 25px
+}
+
+.compras-text-card{
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.compras-text-card button{
+    grid-area: 4/2 / 4/3;
+    width: 200px;
+    height: 40px;
+    background-color: var(--color-buttom);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.pagos-seccion{
+    margin: 50px;
+}
+
+.pagos-seccion img{
+    object-fit: cover;
+}
+
+/*Pagina Despachos */
+.main-districiones{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+    place-self: center;
+}
+
+.distribicion-card{
+    place-self: center;
+}
+
+.distribicion-card p{
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: Imbue;
+}
+
+.distribicion-card h3{
+    font-family: Imbue;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.distibucion-img img{
+    width: 450px;
+    height: 400px;
+}
+
+/* Pagina de que somos */
+.quienSomos-contenedor-main{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+    place-items: center;
+    place-self: center;
+}
+
+.hacemos-card{
+    place-self: center;
+}
+
+/*Fooder*/
+ .footer-contaner .lista-header{
+     grid-template: auto / repeat(2,auto);
+ }
