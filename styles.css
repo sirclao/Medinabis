@@ -276,25 +276,29 @@ fomulario-InicioSeccion h2{
 
 .compras-text-card button{
     grid-area: 4/2 / 4/3;
-    width: 150px;
+    width: 200px;
     height: 40px;
-    border-radius: 15px;
     background-color: var(--color-buttom);
+    border-radius: 10px;
     color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
-    font-size: 15px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 
 .pagos-seccion{
     margin: 50px;
 }
 
+.pagos-seccion img{
+    object-fit: cover;
+}
+
 /*Pagina Despachos */
 .main-districiones{
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template: repeat(1,1fr) / repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 30px;
     margin-bottom: 20px;
     place-self: center;
@@ -330,6 +334,7 @@ fomulario-InicioSeccion h2{
     grid-template: repeat(3,1fr) / repeat(2,1fr);
     gap: 30px;
     margin-bottom: 20px;
+    place-items: center;
     place-self: center;
 }
 
