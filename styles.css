@@ -9,12 +9,17 @@
     --color-buttom: #718355;
 }
 
-body{
+.body{
     background-color: var(--color-fondo);
 }
 
+.body a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .header-container-principal{
-    width: 100%;
     height: auto;
     align-items: center;
 }
@@ -29,7 +34,7 @@ body{
 .contendor-lista .lista-header{
     height: 100%;
     display: grid;
-    grid-template: auto /repeat(5,auto);
+    grid-template-columns:  repeat(5,auto);
     place-items: center;
 }
 
@@ -56,8 +61,7 @@ body{
     height: auto;
     margin: 10px 50px 20px 50px;
     display: grid;
-    grid-template: auto / repeat(2,1fr) ;
-    padding-left: center;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
 
@@ -73,6 +77,12 @@ body{
     font-size: 25px;
     font-weight: 200;
     font-family: Imbue;
+}
+
+.card-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card-container button{
@@ -91,10 +101,15 @@ body{
 }
 
 .valoraciones-main{
-    margin-top: 30px;
+    margin: 30px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
+}
+
+.valoraciones-main img{
+    width: 90%;
+    object-fit: cover;
 }
 
 .valoraciones-main p{
@@ -104,12 +119,12 @@ body{
 }
 
 .contaner-ventas-main{
-    width: 100%;
+    margin: 100px;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 50px;
     display: grid;
-    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    grid-template-columns: repeat(2,2fr);
     gap: 25px
 }
 
@@ -126,9 +141,17 @@ body{
     font-size: 25px;
 }
 
+.productos-ventas button{
+    width: 200px;
+    height: 40px;
+    background-color: var(--color-buttom);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
 .prod1{
-    width: 50%;
-    height: 100%;
     grid-area: 1/1 / 3/1;
     border-radius: 15px;
     place-self: center;
@@ -140,35 +163,28 @@ body{
     align-items: center;
 }
 .prod1 img{
-    width: 150px;
-    height: 300px;
+    width: 200px;
+    height: 350px;
+}
+
+.prod1 p{
+    padding: 25px;
 }
 
 .prod2{
+    margin: 0 auto;
     width: 85%;
     display: grid;
-    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px,2fr)); 
     place-items: center;
 }
 
-
-
 .prod2 img{
-    width: 150px;
+    width: 200px;
     height: 150px;
     grid-area: 1/1 / 3/1;
     margin: 0 auto;
-}
-
-.productos-ventas button{
-    margin-top: 15px;
-    width: 200px;
-    height: 50px;
-    border-radius: 15px;
-    background-color: var(--color-buttom);
-    color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
-    font-size: 20px;
+    object-fit: cover;
 }
 
 .buttom-ventas{
@@ -185,6 +201,46 @@ body{
     color: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
     font-size: 20px;
+}
+
+/*Stylos Formularios*/
+fomulario-InicioSeccion h2{
+
+    text-align: left;
+    font-size: 40px;
+    color: #78788c;
+    margin: auto 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 3.5px solid #787c;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+.fomulario-InicioSeccion .formulario{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; 
+    font-family: 'Montserrat', sans-serif;
+    padding: 55px 80px;
+    margin: 0 auto;
+}
+
+.fomulario-InicioSeccion input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px solid #181831;
+    background: none;
+    padding: 10px;
+    color: rgb(55, 54, 54);
+}
+
+.fomulario-InicioSeccion p::before{
+    content: attr(type);
+    font-size: 20px;
+    color: black;
 }
 
 /*Pagina de Tienda Oline*/

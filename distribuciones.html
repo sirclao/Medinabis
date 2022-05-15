@@ -11,13 +11,27 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Imbue:opsz,wght@10..100,100;10..100,200;10..100,500;10..100,700&family=Inconsolata&family=Inter:wght@300;500&family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&family=Quicksand:wght@300;500;700&family=Roboto+Mono:ital,wght@0,300;0,700;1,400&family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <!-- Bootstrap y respondsive-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+    crossorigin="anonymous"></script>
+    <script src="Backend/js/usuario.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
-<body>
+<body class="body">
     <header class="header-container-principal">
         <nav class="navegador-header">
             <div class="logo">
                 <a href="/index.html">
-                    <img src="/img/logo.png" alt="logo">
+                    <img src="./img/logo.png" alt="logo">
                 </a>
             </div>
             <div class="contendor-lista">
@@ -31,20 +45,96 @@
                     </li>
     
                     <li class="button">
-                        <a href="/">
-                            <button>Inicio Seccion</button>
+                        <div class="fomulario-InicioSeccion">
+                            <div  class="fomulario-InicioSeccion">
+                            <div class="botton">
+                                <button id="pos-Inicio" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"> Iniciar Secion </button>
+                            </div>
+                
+                            <!-- Modal 1 --> 
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Inicio Seccion</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="backend/server/business/inicio.php" method="post" class="formulario"> 
+                                            <p type="Correo">
+                                                <input type="email"> </input>
+                                            </p>
+                                            <p type="Clave">
+                                            <input type="password"> </input> 
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="botton">
+                                            <button id="pos-Inicio" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal2"> Registrarse </button>
+                                        </div>
+                
+                                        <div class="botton">
+                                            <button id="pos-Inicio" type="button" data-bs-dismiss="modal"> Iniciar seccion </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                         </div>
+                        </div>
+                
+                         <!-- Modal  2 -->
+                        <div class="fomulario-InicioSeccion">
+                            <div  class="fomulario-InicioSeccion">
+                                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 for="usuario" class="modal-title" id="exampleModalLabel">Registro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <form class="formulario" action="" id="usuarioForm" title="Insertar Usuario"> 
+                
+                                            <p for="nombreUsuario" type="Nombre">
+                                                <input type="text" id="nombre" placeholder="Escribe su nombre aqui" required> </input> 
+                                            </p>
+                                            <p for="documentoUsuario" type="Documento">
+                                                <input type="text" id="documento" placeholder="Escribe su Documento" required> </input> 
+                                            </p>
+                                            <p for="fechNacimientoUsuario" type="Fecha De Nacieminto"> 
+                                                <input type="date" id="fechaNacimiento" required> </input>
+                                            </p>
+                                            <p for="emailUsuario" type="Correo">
+                                                <input type="text" id="correo" required> </input>
+                                            </p>
+                                            <p for="paswordUsuario" type="Clave" >
+                                            <input type="text" id="clave" required> </input> 
+                                        
+                                        </from>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="botton">
+                                                <button id="pos-Inicio" type="submit" id="form-submit" data-bs-dismiss="modal" class="btn btn-success btn-lg pull-right"> Registarse </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <a href="/index.html">
+                            <img src="./img/Search.png" alt="Buscador">
                         </a>
                     </li>
     
                     <li>
                         <a href="/index.html">
-                            <img src="/img/Search.png" alt="Buscador">
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="/index.html">
-                            <img src="/img/Shopping Cart.png" alt="Carrito De Compras">
+                            <img src="./img/Shopping Cart.png" alt="Carrito De Compras">
                         </a>
                     </li>
                 </ul>
@@ -57,11 +147,13 @@
                 <p>Somos tu tienda  homiopática de confianza, donde podrás comprar todos los productos para el 
                     cuidado de la piel, pelo y uñas, cremas medicadas y productos especializados de las marcas más 
                 reconocidas y recomendadas por los mejores dermatólogos del país.</p>
-                <button>Tienda Oline</button>
+                    <button>
+                        <a href="./tienda_oline.html">Tienda Oline</a>
+                    </button>
             </div>
     
             <div class="card-main">
-                <img src="/img/card_header.png" alt="card-informativa">
+                <img src="./img/card_header.png" alt="card-informativa">
             </div>
         </div>
     </header>
