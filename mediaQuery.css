@@ -1,0 +1,50 @@
+@media only screen and (max-width: 768px) {
+    .valoraciones-main{
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); 
+    }
+    .contaner-ventas-main{
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); 
+    }
+    
+    .compras-text-card button{
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-districiones{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(auto-fit, minmax(100px,1fr));
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .navegador-header{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(auto-fit, minmax(100px,1fr));
+    }
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+    .card-main img{
+        display: none;
+    }
+
+    .main-container-tienda{
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+
+    .compras-contener-main{
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    }
+
+    .pagos-seccion img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .lista-header img{
+       display: none;
+    }
+}
+
